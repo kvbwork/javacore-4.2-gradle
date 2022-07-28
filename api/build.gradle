@@ -1,0 +1,20 @@
+plugins {
+    id "application"
+    id 'java'
+}
+
+group 'ru.netology'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainClassName = 'kvbdev.api.Main'
+}
+
+dependencies {
+    implementation project(":db")
+    implementation project(":service")
+}
